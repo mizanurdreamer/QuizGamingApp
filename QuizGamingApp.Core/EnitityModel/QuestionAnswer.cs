@@ -9,6 +9,8 @@ namespace QuizGamingApp.Core.EnitityModel
 {
     public class QuestionAnswer : Base
     {
+        [JsonProperty(PropertyName = "quizQuestionId")]
+        public string QuizQuestionId { get; set; }
         [JsonProperty(PropertyName = "answerText")]
         public string AnswerText { get; set; }
         [JsonProperty(PropertyName = "isCorrectAnswer")]
