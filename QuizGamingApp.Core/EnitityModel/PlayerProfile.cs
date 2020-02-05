@@ -9,6 +9,8 @@ namespace QuizGamingApp.Core.EnitityModel
 {
     public class PlayerProfile : Base
     {
+        [JsonProperty(PropertyName = "clientProfileId")]
+        public string ClientProfileId { get; set; }
         [JsonProperty(PropertyName = "playerName")]
         public string PlayerName { get; set; }
         [JsonProperty(PropertyName = "playerNumber")]
@@ -17,7 +19,7 @@ namespace QuizGamingApp.Core.EnitityModel
         public string FirstName { get; set; }
         [JsonProperty(PropertyName = "lastName")]
         public string LastName { get; set; }
-        [JsonProperty(PropertyName = "clientName")]
+        [JsonProperty(PropertyName = "EmailAddress")]
         public string EmailAddress { get; set; }
         [JsonProperty(PropertyName = "phoneNo")]
         public string PhoneNo { get; set; }

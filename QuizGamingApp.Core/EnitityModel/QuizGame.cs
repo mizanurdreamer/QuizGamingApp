@@ -9,6 +9,8 @@ namespace QuizGamingApp.Core.EnitityModel
 {
     public class QuizGame : Base
     {
+        [JsonProperty(PropertyName = "clientProfileId")]
+        public string ClientProfileId { get; set; }
         [JsonProperty(PropertyName = "gameName")]
         public string GameName { get; set; }
         [JsonProperty(PropertyName = "gameNumber")]

@@ -9,6 +9,8 @@ namespace QuizGamingApp.Core.EnitityModel
 {
     public class QuizQuestion : Base
     {
+        [JsonProperty(PropertyName = "clientProfileId")]
+        public string ClientProfileId { get; set; }
         [JsonProperty(PropertyName = "questionText")]
         public string QuestionText { get; set; }
         [JsonProperty(PropertyName = "displayOrder")]
