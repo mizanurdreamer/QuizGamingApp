@@ -17,6 +17,10 @@ namespace QuizGamingApp.Web
             QuizGamingAppDBRepository.CreateDocumentClient();
             new ClientProfileRepository().Initialize();
             new PlayerProfileRepository().Initialize();
+            new QuizGameRepository().Initialize();
+            new QuizQuestionRepository().Initialize();
+            new QuestionAnswerRepository().Initialize();
+            new QuizGameAnswerRepository().Initialize();
         }
     }
 }

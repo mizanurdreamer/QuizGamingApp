@@ -201,6 +201,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlayerProfileController.cs" />
+    <Compile Include="Controllers\QuizGameController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -278,6 +279,10 @@
     <Content Include="Views\PlayerProfile\Create.cshtml" />
     <Content Include="Views\PlayerProfile\Edit.cshtml" />
     <Content Include="Views\PlayerProfile\Delete.cshtml" />
+    <Content Include="Views\QuizGame\Index.cshtml" />
+    <Content Include="Views\QuizGame\Create.cshtml" />
+    <Content Include="Views\QuizGame\Edit.cshtml" />
+    <Content Include="Views\QuizGame\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

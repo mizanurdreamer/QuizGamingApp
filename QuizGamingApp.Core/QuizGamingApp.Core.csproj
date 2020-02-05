@@ -52,6 +52,7 @@
     <Compile Include="BLL\BaseManager.cs" />
     <Compile Include="BLL\ClientProfileManager.cs" />
     <Compile Include="BLL\PlayerProfileManager.cs" />
+    <Compile Include="BLL\QuizGameManager.cs" />
     <Compile Include="DAL\BaseRepository.cs" />
     <Compile Include="DAL\ClientProfileRepository.cs" />
     <Compile Include="DAL\PlayerProfileRepository.cs" />
