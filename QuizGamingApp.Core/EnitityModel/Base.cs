@@ -1,9 +1,11 @@
 ﻿using Newtonsoft.Json;
+using QuizGamingApp.Core.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static QuizGamingApp.Core.Util.Enums;
 
 namespace QuizGamingApp.Core.EnitityModel
 {
@@ -11,8 +13,9 @@ namespace QuizGamingApp.Core.EnitityModel
     {
         public Base()
         {
-            CreatedDate = DateTime.UtcNow;
+            
         }
+        
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }
         [JsonProperty(PropertyName = "createdDate")]
@@ -28,7 +31,25 @@ namespace QuizGamingApp.Core.EnitityModel
         [JsonProperty(PropertyName = "deletedBy")]
         public string DeletedBy { get; set; }
         [JsonProperty(PropertyName = "isDeleted")]
-        public bool IsDeleted { get; set; } 
+        public bool IsDeleted { get; set; }
+        public void SetEntityStateInfo(EntityState entityState, string userId)
+        {
+            if (entityState == EntityState.Added)
+            {
+                CreatedDate = DateTime.UtcNow;
+                CreatedBy = userId;
+            }
+            else if (entityState == EntityState.Modified)
+            {
+                UpdatedDate = DateTime.UtcNow;
+                UpdatedBy = userId;
+            }
+            else if (entityState == EntityState.Deleted)
+            {
+                DeletedDate = DateTime.UtcNow;
+                DeletedBy = userId;
+            }
+        }
 
     }
 }

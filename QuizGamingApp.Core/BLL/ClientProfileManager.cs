@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static QuizGamingApp.Core.Util.Enums;
 
 namespace QuizGamingApp.Core.BLL
 {
@@ -26,12 +27,13 @@ namespace QuizGamingApp.Core.BLL
 
         public async Task CreateAsync(ClientProfile clientProfile)
         {
-            
+            clientProfile.SetEntityStateInfo(EntityState.Added, Guid.NewGuid().ToString());
             Document document = await _clientProfileRepository.CreateItemAsync(clientProfile);
         }
 
         public async Task EditAsync(ClientProfile clientProfile)
         {
+            clientProfile.SetEntityStateInfo(EntityState.Deleted, Guid.NewGuid().ToString());
             await _clientProfileRepository.UpdateItemAsync(clientProfile.Id, clientProfile);
         }
 

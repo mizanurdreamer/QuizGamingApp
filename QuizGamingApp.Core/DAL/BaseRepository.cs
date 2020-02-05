@@ -4,11 +4,8 @@ using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Documents.Linq;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Security.Policy;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace QuizGamingApp.Core.DAL
