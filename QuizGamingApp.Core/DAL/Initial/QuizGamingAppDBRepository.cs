@@ -40,7 +40,7 @@ namespace QuizGamingApp.Core.DAL
         {
             try
             {
-                bool IsCreateDatabase = ConfigurationManager.AppSettings["IsCreateDatabse"] != null? bool.Parse(ConfigurationManager.AppSettings["IsCreateDatabse"]):false;
+                bool IsCreateDatabase = ConfigurationManager.AppSettings["IsCreateDatabase"] != null? bool.Parse(ConfigurationManager.AppSettings["IsCreateDatabase"]):false;
                 if (IsCreateDatabase)
                 {
                     await QuizGamingAppClient.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
