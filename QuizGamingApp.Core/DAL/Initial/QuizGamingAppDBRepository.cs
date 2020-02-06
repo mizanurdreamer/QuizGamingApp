@@ -40,23 +40,28 @@ namespace QuizGamingApp.Core.DAL
         {
             try
             {
-                bool IsCreateDatabase = ConfigurationManager.AppSettings["IsCreateDatabase"] != null? bool.Parse(ConfigurationManager.AppSettings["IsCreateDatabase"]):false;
-                if (IsCreateDatabase)
+                bool IsCreateDatabase = ConfigurationManager.AppSettings["IsCreateDatabase"] != null ? bool.Parse(ConfigurationManager.AppSettings["IsCreateDatabase"]) : false;
+                try
                 {
-                    await QuizGamingAppClient.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
+                    if (IsCreateDatabase)
+                    {
+                        await QuizGamingAppClient.ReadDatabaseAsync(UriFactory.CreateDatabaseUri(DatabaseId));
+                    }
+                }
+                catch (DocumentClientException e)
+                {
+                    if (e.StatusCode == System.Net.HttpStatusCode.NotFound)
+                    {
+                        await QuizGamingAppClient.CreateDatabaseAsync(new Database { Id = DatabaseId });
+                    }
+               
                 }
             }
-            catch (DocumentClientException e)
+            catch (Exception)
             {
-                if (e.StatusCode == System.Net.HttpStatusCode.NotFound)
-                {
-                    await QuizGamingAppClient.CreateDatabaseAsync(new Database { Id = DatabaseId });
-                }
-                else
-                {
-                    throw;
-                }
+
             }
+           
         }
 
         private static async Task CreateTablesIfNotExists()
