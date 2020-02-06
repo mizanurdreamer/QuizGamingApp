@@ -85,6 +85,12 @@ namespace QuizGamingApp.Core.DAL
             GameSubscriptionTypeRepository gameSubscriptionTypeRepository = new GameSubscriptionTypeRepository();
             RewardingPlayerTypeRepository rewardingPlayerTypeRepository = new RewardingPlayerTypeRepository();
 
+            var gameTypeList = await gameTypeRepository.GetItemsAsync(d => d.GameTypeId == 1);
+            if(gameTypeList != null && gameTypeList.Any())
+            {
+                return;
+            }
+
             GameType gameType = new GameType()
             {
                 GameTypeId = 1,
