@@ -14,7 +14,7 @@ namespace QuizGamingApp.Core.EnitityModel
         [JsonProperty(PropertyName = "quizGameId")]
         public string QuizGameId { get; set; }
         [JsonProperty(PropertyName = "gameModeId")]
-        public string GameModeId { get; set; }
+        public int GameModeId { get; set; }
         [JsonProperty(PropertyName = "roundTimeInSec")]
         public int RoundTimeInSec { get; set; }
         [JsonProperty(PropertyName = "maximumPoint")]
