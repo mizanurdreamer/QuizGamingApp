@@ -83,6 +83,7 @@
     <Compile Include="Util\Enums.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PageViewModel\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <ItemGroup>
