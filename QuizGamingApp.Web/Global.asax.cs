@@ -15,12 +15,7 @@ namespace QuizGamingApp.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             QuizGamingAppDBRepository.CreateDocumentClient();
-            new ClientProfileRepository().Initialize();
-            new PlayerProfileRepository().Initialize();
-            new QuizGameRepository().Initialize();
-            new QuizQuestionRepository().Initialize();
-            new QuestionAnswerRepository().Initialize();
-            new QuizGameAnswerRepository().Initialize();
+            
         }
     }
 }

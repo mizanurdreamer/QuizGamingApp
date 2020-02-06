@@ -14,7 +14,7 @@ namespace QuizGamingApp.Core.EnitityModel
         [JsonProperty(PropertyName = "gameTypeId")]
         public int GameTypeId { get; set; }
         [JsonProperty(PropertyName = "gameModeId")]
-        public string GameModeId { get; set; }
+        public int GameModeId { get; set; }
         [JsonProperty(PropertyName = "monthlyGamePrice")]
         public decimal MonthlyGamePrice { get; set; }
         [JsonProperty(PropertyName = "yearlyDiscount")]
