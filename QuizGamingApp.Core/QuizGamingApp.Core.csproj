@@ -66,6 +66,8 @@
     <Compile Include="EnitityModel\Game.cs" />
     <Compile Include="EnitityModel\GameCoupon.cs" />
     <Compile Include="EnitityModel\GameMode.cs" />
+    <Compile Include="EnitityModel\GameSubscription.cs" />
+    <Compile Include="EnitityModel\GameSubscriptionType.cs" />
     <Compile Include="EnitityModel\GameType.cs" />
     <Compile Include="EnitityModel\PlayerLoginType.cs" />
     <Compile Include="EnitityModel\PlayerProfile.cs" />
