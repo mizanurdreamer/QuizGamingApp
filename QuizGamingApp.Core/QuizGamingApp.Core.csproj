@@ -67,12 +67,16 @@
     <Compile Include="EnitityModel\GameCoupon.cs" />
     <Compile Include="EnitityModel\GameMode.cs" />
     <Compile Include="EnitityModel\GameType.cs" />
+    <Compile Include="EnitityModel\PlayerLoginType.cs" />
     <Compile Include="EnitityModel\PlayerProfile.cs" />
     <Compile Include="EnitityModel\QuestionAnswer.cs" />
     <Compile Include="EnitityModel\QuizGame.cs" />
     <Compile Include="EnitityModel\QuizGameAnswer.cs" />
+    <Compile Include="EnitityModel\QuizGameCouponDetail.cs" />
     <Compile Include="EnitityModel\QuizGameModeDetail.cs" />
     <Compile Include="EnitityModel\QuizQuestion.cs" />
+    <Compile Include="EnitityModel\RewardDistributionType.cs" />
+    <Compile Include="EnitityModel\RewardingPlayerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\Enums.cs" />
   </ItemGroup>
