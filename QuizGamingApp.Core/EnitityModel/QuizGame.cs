@@ -12,10 +12,8 @@ namespace QuizGamingApp.Core.EnitityModel
         [JsonProperty(PropertyName = "clientProfileId")]
         public string ClientProfileId { get; set; }
         [JsonProperty(PropertyName = "gameName")]
-        public string GameName { get; set; }
+        public string GameId { get; set; }
         [JsonProperty(PropertyName = "gameNumber")]
-        public string GameNumber { get; set; }
-        [JsonProperty(PropertyName = "mainBoardIntroText")]
         public string MainBoardIntroText { get; set; }
         [JsonProperty(PropertyName = "mainBoardFinalText")]
         public string MainBoardFinalText { get; set; }
@@ -27,6 +25,9 @@ namespace QuizGamingApp.Core.EnitityModel
         public string WinnerMessage { get; set; }
         [JsonProperty(PropertyName = "loserMessage")]
         public string LoserMessage { get; set; }
+        [JsonProperty(PropertyName = "gameCouponId")]
+        public int GameCouponId { get; set; }
+
 
     }
 }

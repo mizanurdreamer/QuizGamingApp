@@ -63,10 +63,15 @@
     <Compile Include="DAL\QuizQuestionRepository.cs" />
     <Compile Include="EnitityModel\Base.cs" />
     <Compile Include="EnitityModel\ClientProfile.cs" />
+    <Compile Include="EnitityModel\Game.cs" />
+    <Compile Include="EnitityModel\GameCoupon.cs" />
+    <Compile Include="EnitityModel\GameMode.cs" />
+    <Compile Include="EnitityModel\GameType.cs" />
     <Compile Include="EnitityModel\PlayerProfile.cs" />
     <Compile Include="EnitityModel\QuestionAnswer.cs" />
     <Compile Include="EnitityModel\QuizGame.cs" />
     <Compile Include="EnitityModel\QuizGameAnswer.cs" />
+    <Compile Include="EnitityModel\QuizGameModeDetail.cs" />
     <Compile Include="EnitityModel\QuizQuestion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\Enums.cs" />
