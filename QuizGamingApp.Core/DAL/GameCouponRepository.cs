@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class GameCouponRepository : BaseRepository<GameCoupon>
     {
-        public GameCouponRepository() : base(ConfigurationManager.AppSettings["GameCoupon"])
+        public GameCouponRepository() : base(typeof(GameCoupon).Name)
         {
 
         }

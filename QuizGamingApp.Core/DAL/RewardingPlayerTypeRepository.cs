@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class RewardingPlayerTypeRepository : BaseRepository<RewardingPlayerType>
     {
-        public RewardingPlayerTypeRepository() : base(ConfigurationManager.AppSettings["RewardingPlayerType"])
+        public RewardingPlayerTypeRepository() : base(typeof(RewardingPlayerType).Name)
         { 
 
         }

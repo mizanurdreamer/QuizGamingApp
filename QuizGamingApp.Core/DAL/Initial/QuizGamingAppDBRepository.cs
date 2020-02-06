@@ -12,13 +12,11 @@ namespace QuizGamingApp.Core.DAL
 {
     public class QuizGamingAppDBRepository
     {
-        
-
-        private static readonly string DatabaseId = ConfigurationManager.AppSettings["database"];
+        private static readonly string DatabaseId = ConfigurationManager.AppSettings["IdDocDb_Database"];
         private static DocumentClient QuizGamingAppClient;
         private static void Initialize()
         {
-            QuizGamingAppClient = new DocumentClient(new Uri(ConfigurationManager.AppSettings["endpoint"]), ConfigurationManager.AppSettings["authKey"]);
+            QuizGamingAppClient = new DocumentClient(new Uri(ConfigurationManager.AppSettings["IdDocDb_Uri"]), ConfigurationManager.AppSettings["IdDocDb_AuthKey"]);
             CreateDatabaseIfNotExistsAsync().Wait();
             CreateTablesIfNotExists().Wait();
             InsertMasterDataAsync().Wait();
