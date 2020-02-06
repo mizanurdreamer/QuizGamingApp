@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class GameTypeRepository : BaseRepository<GameType>
     {
-        public GameTypeRepository() : base(ConfigurationManager.AppSettings["GameType"])
+        public GameTypeRepository() : base(typeof(GameType).Name)
         {
                 
         }

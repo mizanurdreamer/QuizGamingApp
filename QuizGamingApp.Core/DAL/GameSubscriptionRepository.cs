@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     class GameSubscriptionRepository : BaseRepository<GameSubscription>
     {
-        public GameSubscriptionRepository() : base(ConfigurationManager.AppSettings["GameSubscription"])
+        public GameSubscriptionRepository() : base(typeof(GameSubscription).Name)
         {
 
         }

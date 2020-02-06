@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class RewardDistributionTypeRepository : BaseRepository<RewardDistributionType>
     {
-        public RewardDistributionTypeRepository() : base(ConfigurationManager.AppSettings["RewardDistributionType"])
+        public RewardDistributionTypeRepository() : base(typeof(RewardDistributionType).Name)
         {
 
         }

@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class QuizGameAnswerRepository : BaseRepository<QuizGameAnswer>
     {
-        public QuizGameAnswerRepository() : base(ConfigurationManager.AppSettings["QuizGameAnswer"])
+        public QuizGameAnswerRepository() : base(typeof(QuizGameAnswer).Name)
         {
 
         }
