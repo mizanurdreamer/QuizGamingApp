@@ -198,6 +198,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClientProfileController.cs" />
+    <Compile Include="Controllers\GameCouponController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PlayerProfileController.cs" />
@@ -283,6 +284,11 @@
     <Content Include="Views\QuizGame\Create.cshtml" />
     <Content Include="Views\QuizGame\Edit.cshtml" />
     <Content Include="Views\QuizGame\Delete.cshtml" />
+    <Content Include="Views\GameCoupon\Create.cshtml" />
+    <Content Include="Views\GameCoupon\Delete.cshtml" />
+    <Content Include="Views\GameCoupon\Details.cshtml" />
+    <Content Include="Views\GameCoupon\Edit.cshtml" />
+    <Content Include="Views\GameCoupon\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

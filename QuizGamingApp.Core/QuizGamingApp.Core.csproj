@@ -52,6 +52,7 @@
     <Compile Include="BLL\BaseManager.cs" />
     <Compile Include="BLL\ClientProfileManager.cs" />
     <Compile Include="BLL\PlayerProfileManager.cs" />
+    <Compile Include="BLL\GameCouponManager.cs" />
     <Compile Include="BLL\QuizGameManager.cs" />
     <Compile Include="DAL\BaseRepository.cs" />
     <Compile Include="DAL\ClientProfileRepository.cs" />
@@ -60,6 +61,8 @@
     <Compile Include="DAL\GameRepository.cs" />
     <Compile Include="DAL\GameSubscriptionRepository.cs" />
     <Compile Include="DAL\GameSubscriptionTypeRepository.cs" />
+    <Compile Include="DAL\BasePictureRepository.cs" />
+    <Compile Include="DAL\PictureTypeRepository.cs" />
     <Compile Include="DAL\GameTypeRepository.cs" />
     <Compile Include="DAL\PlayerLoginTypeRepository.cs" />
     <Compile Include="DAL\PlayerProfileRepository.cs" />
@@ -71,6 +74,7 @@
     <Compile Include="DAL\RewardDistributionTypeRepository.cs" />
     <Compile Include="DAL\RewardingPlayerTypeRepository.cs" />
     <Compile Include="EnitityModel\Base.cs" />
+    <Compile Include="EnitityModel\BasePicture.cs" />
     <Compile Include="EnitityModel\ClientProfile.cs" />
     <Compile Include="EnitityModel\Game.cs" />
     <Compile Include="EnitityModel\GameCoupon.cs" />
@@ -78,6 +82,7 @@
     <Compile Include="EnitityModel\GameSubscription.cs" />
     <Compile Include="EnitityModel\GameSubscriptionType.cs" />
     <Compile Include="EnitityModel\GameType.cs" />
+    <Compile Include="EnitityModel\PictureType.cs" />
     <Compile Include="EnitityModel\PlayerLoginType.cs" />
     <Compile Include="EnitityModel\PlayerProfile.cs" />
     <Compile Include="EnitityModel\QuestionAnswer.cs" />

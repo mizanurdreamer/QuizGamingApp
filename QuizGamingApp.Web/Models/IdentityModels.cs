@@ -29,5 +29,7 @@ namespace QuizGamingApp.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<QuizGamingApp.Core.EnitityModel.GameCoupon> GameCoupons { get; set; }
     }
 }
