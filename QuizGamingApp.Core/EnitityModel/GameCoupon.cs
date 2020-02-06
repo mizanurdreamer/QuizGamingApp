@@ -17,5 +17,7 @@ namespace QuizGamingApp.Core.EnitityModel
         public DateTime StartDate { get; set; }
         [JsonProperty(PropertyName = "endDate")]
         public DateTime EndDate { get; set; }
+        [JsonProperty(PropertyName = "pictureId")]
+        public string PictureId { get; set; }
     }
 }
