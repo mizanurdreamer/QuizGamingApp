@@ -94,10 +94,7 @@ namespace QuizGamingApp.Core.DAL
                         new DocumentCollection { Id = CollectionId },
                         new RequestOptions { OfferThroughput = 1000 });
                 }
-                else
-                {
-                    throw;
-                }
+
             }
         }
     }

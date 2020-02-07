@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class ClientProfileRepository : BaseRepository<ClientProfile>
     {
-        public ClientProfileRepository() : base(ConfigurationManager.AppSettings["ClientProfile"])
+        public ClientProfileRepository() : base(typeof(ClientProfile).Name)
         {
 
         }

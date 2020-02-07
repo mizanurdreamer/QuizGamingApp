@@ -11,7 +11,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class PlayerProfileRepository : BaseRepository<PlayerProfile>
     {
-        public PlayerProfileRepository() : base(ConfigurationManager.AppSettings["PlayerProfile"])
+        public PlayerProfileRepository() : base(typeof(PlayerProfile).Name)
         {
           
         }

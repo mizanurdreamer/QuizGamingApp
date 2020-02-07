@@ -11,6 +11,8 @@ namespace QuizGamingApp.Core.EnitityModel
     {
         [JsonProperty(PropertyName = "gameTitle")]
         public string GameTitle { get; set; }
+        [JsonProperty(PropertyName = "gameDescription")]
+        public string GameDescription { get; set; }
         [JsonProperty(PropertyName = "gameTypeId")]
         public int GameTypeId { get; set; }
         [JsonProperty(PropertyName = "gameModeId")]

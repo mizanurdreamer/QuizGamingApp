@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class QuizQuestionRepository : BaseRepository<QuizQuestion>
     {
-        public QuizQuestionRepository() : base(ConfigurationManager.AppSettings["QuizQuestion"])
+        public QuizQuestionRepository() : base(typeof(QuizQuestion).Name)
         {
 
         }

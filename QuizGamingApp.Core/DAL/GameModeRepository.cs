@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class GameModeRepository : BaseRepository<GameMode>
     {
-        public GameModeRepository() : base(ConfigurationManager.AppSettings["GameMode"])
+        public GameModeRepository() : base(typeof(GameMode).Name)
         {
 
         }

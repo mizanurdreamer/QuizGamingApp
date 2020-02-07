@@ -10,7 +10,7 @@ namespace QuizGamingApp.Core.DAL
 {
     public class PlayerLoginTypeRepository : BaseRepository<PlayerLoginType>
     {
-        public PlayerLoginTypeRepository() : base(ConfigurationManager.AppSettings["PlayerLoginType"])
+        public PlayerLoginTypeRepository() : base(typeof(PlayerLoginType).Name)
         {
                 
         }
